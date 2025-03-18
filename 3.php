@@ -1,0 +1,37 @@
+<?php
+header("Content-Type:text/html;charset=utf-8");
+$a=2;
+echo $b=$a;
+echo "<br>";
+echo $b+=4;
+echo "<br>";
+echo $b-=2;
+echo "<br>";
+echo $b*=2;
+echo "<br>";
+echo $b/=4;
+echo "<br>";
+echo $b%=2;
+echo "<br>";
+echo $b .="abc";
+echo "<br>";
+$a=4;
+$b=&$a;
+echo "a=".$a."b=".$b."<br>";
+$a=5;
+echo "a=".$a."b=".$b."<br>";
+$b=6;
+echo "a=".$a."b=".$b."<br>";
+$a=5;
+echo ++$a;
+echo $a;
+$b=5;
+echo $b++;
+echo $b;
+$c=5;
+echo --$c;
+echo $c;
+$d=5;
+echo $d--;
+echo $d;
+
