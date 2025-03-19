@@ -1,0 +1,55 @@
+1.创建一个字典   实现  输入1-5  输出对应英文单词
+2.创建一个字典 键为数字1到5     对应的值是英文单词
+ 为字典追加一个数据   6: 666       
+修改键为6的数据值为six
+求字典长度
+
+删除键为3的字典数据
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+functions = {'f1': lambda :3, 'f2': lambda :5, 'f3': lambda :8}
+key = input('请输入：')
+func = functions.get(key)
+# 这个检查非常有必要，如果输入的内容不是字典的“键”，返回的空值不是可调用对象
+# 语句func()会抛出异常TypeError: 'NoneType' object is not callable
+if func:
+    print(func())
+else:
+    print('error')
+·························
+>>> print(len(data))     
+
+>>> data = {'host': '127.0.0.1', 'port': 80}
+>>> data['host'] = '192.168.9.1'      # 修改已有元素的“值”，不改变元素顺序
+>>> print(data)
+{'host': '192.168.9.1', 'port': 80}
+>>> data['protocol'] = 'TCP'          # 在尾部添加新元素
+>>> print(data)
+{'host': '192.168.9.1', 'port': 80, 'protocol': 'TCP'}
+>>> data = {'host': '127.0.0.1', 'port': 8080, 'scheme': 'HTTP'}
+# 指定的“键”不存在，并且没有指定参数d，抛出异常
+>>> print(data.pop('protocol'))
+KeyError: 'protocol'
+# 指定的“键”不存在，但是指定了参数d，就返回参数d的值
+>>> print(data.pop('protocol', '不存在'))
+不存在
+# 指定的“键”存在，直接返回对应的元素的“值”，忽略参数d的内容
+>>> print(data.pop('scheme', '不存在'))
+HTTP
+>>> print(data)
+{'host': '127.0.0.1', 'port': 8080}
+# 删除并返回字典中最后一个元素
+>>> print(data.popitem())
+('port', 8080)
+# 删除指定的“键”对应的元素，没有返回值
+>>> del data['host']
+>>> print(data)
+{}
+>>> data = {'host': '127.0.0.1', 'port': 8080, 'scheme': 'HTTP'}
+# 原地删除字典里的所有元素
+>>> data.clear()
+>>> print(data)
+{}
+>>> data = {'host': '127.0.0.1', 'port': 8080, 'scheme': 'HTTP'}
+# 按后入先出顺序依次删除并返回字典中的元素
+
+

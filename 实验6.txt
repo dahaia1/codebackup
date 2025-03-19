@@ -1,0 +1,760 @@
+interface VLAN 1
+ ip address 192.168.1.1 255.255.255.0
+ --More-- *Apr  2 13:18:25: %ARP-4-RATELIMIT: Suppressed message count: 65.
+ no shutdown
+ --More-- *Apr  2 13:18:25: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLA
+N 1, sourced by 001a.a94c.cd84.
+!
+ --More-- *Apr  2 13:18:26: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLA
+N 1, sourced by 001a.a94c.cd84.
+*Apr  2 13:18:27: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:18:28: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+!
+line con 0
+line vty 0 4
+ --More-- *Apr  2 13:18:29: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLA
+N 1, sourced by 001a.a94c.cd84.
+ login
+!
+!
+end
+
+L3-SW#
+L3-SW#*Apr  2 13:18:30: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1,
+ sourced by 001a.a94c.cd84.
+*Apr  2 13:18:31: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:18:32: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:18:33: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:18:34: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:19:16: %ARP-4-RATELIMIT: Suppressed message count: 41.
+*Apr  2 13:19:16: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:19:17: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:19:18: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:19:19: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:19:20: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:19:21: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:19:22: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:19:23: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:19:24: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:19:25: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:19:32: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to d
+own.
+*Apr  2 13:19:32: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to down.
+
+L3-SW#*Apr  2 13:19:33: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+
+L3-SW#*Apr  2 13:20:07: %ARP-4-RATELIMIT: Suppressed message count: 39.
+*Apr  2 13:20:07: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:20:08: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:20:09: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:20:10: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:20:11: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:20:12: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:20:13: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:20:14: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:20:15: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:20:16: %ARP-4-DUPADDR: Duplicate address 192.168.1.1 on VLAN 1, sourc
+ed by 001a.a94c.cd84.
+*Apr  2 13:20:19: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to down.
+*Apr  2 13:20:21: %LINK-3-UPDOWN: Interface FastEthernet 0/1, changed state to d
+own.
+*Apr  2 13:20:21: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/1, changed state to down.
+*Apr  2 13:20:22: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+*Apr  2 13:22:09: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to up.
+*Apr  2 13:22:11: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to u
+p.
+*Apr  2 13:22:11: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to up.
+*Apr  2 13:22:12: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+*Apr  2 13:22:24: %LINK-3-UPDOWN: Interface FastEthernet 0/1, changed state to u
+p.
+*Apr  2 13:22:24: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/1, changed state to up.
+*Apr  2 13:22:28: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+
+L3-SW#ping 192.168.1.2
+Sending 5, 100-byte ICMP Echoes to 192.168.1.2, timeout is 2 seconds:
+  < press Ctrl+C to break >
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/4/10 ms
+L3-SW#ping 192.168.1.2 ntirnes 2000
+                          ^
+% Invalid input detected at '^' marker.
+
+L3-SW#*Apr  2 13:23:11: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed stat
+e to down.
+*Apr  2 13:23:11: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to down.
+*Apr  2 13:23:12: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+
+L3-SW#
+L3-SW#ping 192.168.1.2 ntirnes 2000*Apr  2 13:23:27: %LINK-3-UPDOWN: Interface F
+astEthernet 0/2, changed state to up.
+*Apr  2 13:23:27: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to up.
+*Apr  2 13:23:28: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+
+                          ^
+% Invalid input detected at '^' marker.
+
+L3-SW#ping 192.168.1.2 ntimes 2000
+Sending 2000, 100-byte ICMP Echoes to 192.168.1.2, timeout is 2 seconds:
+  < press Ctrl+C to break >
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!.*Apr  2 13:23:53: %LINK-3-UPDOWN: Interface FastEthernet 0/2, chan
+ged state to down.
+*Apr  2 13:23:53: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to down.
+*Apr  2 13:23:54: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Success rate is 99 percent (1998/2000), round-trip min/avg/max = 1/2/10 ms
+L3-SW#*Apr  2 13:24:11: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1,
+changed state to down.
+*Apr  2 13:24:13: %LINK-3-UPDOWN: Interface FastEthernet 0/1, changed state to d
+own.
+*Apr  2 13:24:13: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/1, changed state to down.
+*Apr  2 13:24:13: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+
+L3-SW CON0 is now available
+
+
+Press RETURN to get started
+
+RG-S3760-1-2>
+RG-S3760-1-2>
+RG-S3760-1-2>ena 14
+
+Password:
+RG-S3760-1-2#con t
+Enter configuration commands, one per line.  End with CNTL/Z.
+RG-S3760-1-2(config)#host
+RG-S3760-1-2(config)#hostname L2-SW
+L2-SW(config)#hostname L3-SW
+L3-SW(config)#
+L3-SW(config)#
+L3-SW(config)#int
+L3-SW(config)#interface vlan 1
+L3-SW(config-if-VLAN 1)#*Apr  8 08:26:42: %LINEPROTO-5-UPDOWN: Line protocol on
+Interface VLAN 1, changed state to up.
+
+L3-SW(config-if-VLAN 1)#ip ad
+L3-SW(config-if-VLAN 1)#ip address 192.168.1.1 255.255.255.0
+L3-SW(config-if-VLAN 1)#no sh
+L3-SW(config-if-VLAN 1)#no shutdown
+L3-SW(config-if-VLAN 1)#exit
+L3-SW(config)#int
+L3-SW(config)#interface f
+L3-SW(config)#interface fastEthernet 0/1
+L3-SW(config-if-FastEthernet 0/1)#sw
+L3-SW(config-if-FastEthernet 0/1)#switchport m
+L3-SW(config-if-FastEthernet 0/1)#switchport mode t
+L3-SW(config-if-FastEthernet 0/1)#switchport mode trunk
+L3-SW(config-if-FastEthernet 0/1)#exit
+L3-SW(config)#interface fastEthernet 0/2
+L3-SW(config-if-FastEthernet 0/2)#switchport mode trunk
+L3-SW(config-if-FastEthernet 0/2)#exit
+L3-SW(config)#sp
+L3-SW(config)#spanning-tree
+Enable spanning-tree.
+L3-SW(config)#spanning-tree *Apr  8 08:29:33: %SPANTREE-5-TOPOTRAP: Topology Cha
+nge Trap for instance 0.
+
+L3-SW(config)#spanning-tree mode rstp
+L3-SW(config)#*Apr  8 08:29:46: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+show
+% Incomplete command.
+
+L3-SW(config)#show sp
+L3-SW(config)#show spanning-tree
+StpVersion : RSTP
+SysStpStatus : ENABLED
+MaxAge : 20
+HelloTime : 2
+ForwardDelay : 15
+BridgeMaxAge : 20
+BridgeHelloTime : 2
+BridgeForwardDelay : 15
+MaxHops: 20
+TxHoldCount : 3
+PathCostMethod : Long
+BPDUGuard : Disabled
+BPDUFilter : Disabled
+LoopGuardDef  : Disabled
+BridgeAddr : 001a.a94d.0383
+Priority: 32768
+TimeSinceTopologyChange : 0d:0h:28m:1s
+TopologyChanges : 0
+DesignatedRoot : 8000.001a.a94d.0383
+RootCost : 0
+RootPort : 0
+L3-SW(config)#sp
+L3-SW(config)#spanning-tree p
+L3-SW(config)#spanning-tree pro
+L3-SW(config)#spanning-tree pri
+L3-SW(config)#spanning-tree priority 4096
+L3-SW(config)#int f
+L3-SW(config)#int fastEthernet 0/2
+L3-SW(config-if-FastEthernet 0/2)#sp
+L3-SW(config-if-FastEthernet 0/2)#spa
+L3-SW(config-if-FastEthernet 0/2)#spanning-tree pot
+L3-SW(config-if-FastEthernet 0/2)#spanning-tree por
+L3-SW(config-if-FastEthernet 0/2)#spanning-tree port-
+L3-SW(config-if-FastEthernet 0/2)#spanning-tree port-priority 96
+L3-SW(config-if-FastEthernet 0/2)#exit
+L3-SW(config)#sp
+L3-SW(config)#spanning-tree pat
+L3-SW(config)#spanning-tree pathcost me
+L3-SW(config)#spanning-tree pathcost method sh
+L3-SW(config)#spanning-tree pathcost method short
+L3-SW(config)#show sp
+L3-SW(config)#show spanning-tree
+StpVersion : RSTP
+SysStpStatus : ENABLED
+MaxAge : 20
+HelloTime : 2
+ForwardDelay : 15
+BridgeMaxAge : 20
+BridgeHelloTime : 2
+BridgeForwardDelay : 15
+MaxHops: 20
+TxHoldCount : 3
+PathCostMethod : Short
+BPDUGuard : Disabled
+BPDUFilter : Disabled
+LoopGuardDef  : Disabled
+BridgeAddr : 001a.a94d.0383
+Priority: 4096
+TimeSinceTopologyChange : 0d:0h:32m:17s
+TopologyChanges : 0
+DesignatedRoot : 1000.001a.a94d.0383
+RootCost : 0
+RootPort : 0
+L3-SW(config)#sh
+L3-SW(config)#show s
+L3-SW(config)#show spa
+L3-SW(config)#show spanning-tree int
+L3-SW(config)#show spanning-tree interface fa
+L3-SW(config)#show spanning-tree interface fastEthernet 0/1
+
+PortAdminPortFast : Disabled
+PortOperPortFast : Enabled
+PortAdminAutoEdge : Enabled
+PortOperAutoEdge : Enabled
+PortAdminLinkType : auto
+PortOperLinkType : point-to-point
+PortBPDUGuard : Disabled
+PortBPDUFilter : Disabled
+PortGuardmode  : None
+PortState : forwarding
+PortPriority : 128
+PortDesignatedRoot : 1000.001a.a94d.0383
+PortDesignatedCost : 0
+PortDesignatedBridge :1000.001a.a94d.0383
+PortDesignatedPort : 8001
+PortForwardTransitions : 2
+PortAdminPathCost : 19
+PortOperPathCost : 19
+Inconsistent states : normal
+PortRole : designatedPort
+L3-SW(config)#show spanning-tree interface fastEthernet 0/2
+no spanning tree info available for FastEthernet 0/2.
+L3-SW(config)#show spanning-tree interface fastEthernet 0/2
+no spanning tree info available for FastEthernet 0/2.
+L3-SW(config)#*Apr  8 08:37:08: %LINEPROTO-5-UPDOWN: Line protocol on Interface
+VLAN 1, changed state to down.
+*Apr  8 08:37:09: %LINK-3-UPDOWN: Interface FastEthernet 0/1, changed state to d
+own.
+*Apr  8 08:37:09: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/1, changed state to down.
+*Apr  8 08:37:10: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+*Apr  8 08:37:11: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to up.
+*Apr  8 08:37:12: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to u
+p.
+*Apr  8 08:37:12: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to up.
+*Apr  8 08:37:15: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+*Apr  8 08:37:16: %LINK-3-UPDOWN: Interface FastEthernet 0/1, changed state to u
+p.
+*Apr  8 08:37:16: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/1, changed state to up.
+*Apr  8 08:37:21: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+
+L3-SW(config)#show spanning-tree interface fastEthernet 0/2
+
+PortAdminPortFast : Disabled
+PortOperPortFast : Disabled
+PortAdminAutoEdge : Enabled
+PortOperAutoEdge : Disabled
+PortAdminLinkType : auto
+PortOperLinkType : point-to-point
+PortBPDUGuard : Disabled
+PortBPDUFilter : Disabled
+PortGuardmode  : None
+PortState : forwarding
+PortPriority : 96
+PortDesignatedRoot : 1000.001a.a94d.0383
+PortDesignatedCost : 0
+PortDesignatedBridge :1000.001a.a94d.0383
+PortDesignatedPort : 6002
+PortForwardTransitions : 1
+PortAdminPathCost : 19
+PortOperPathCost : 19
+Inconsistent states : normal
+PortRole : designatedPort
+L3-SW(config)#ping 192.168.1.2 nt
+L3-SW(config)#ping 192.168.1.2 nti
+L3-SW(config)#ping 192.168.1.2 ntimes 2000
+% Unknown command.
+
+L3-SW(config)#ping 192.168.1.2 ntimes 2000
+% Unknown command.
+
+L3-SW(config)#
+L3-SW(config)#exit
+L3-SW#*Apr  8 08:41:06: %SYS-5-CONFIG_I: Configured from console by console
+
+L3-SW#ping 192.168.1.2 nti
+L3-SW#ping 192.168.1.2 ntimes 2000
+Sending 2000, 100-byte ICMP Echoes to 192.168.1.2, timeout is 2 seconds:
+  < press Ctrl+C to break >
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Success rate is 100 percent (2000/2000), round-trip min/avg/max = 1/1/20 ms
+L3-SW#ping 192.168.1.2 ntimes 4000
+Sending 4000, 100-byte ICMP Echoes to 192.168.1.2, timeout is 2 seconds:
+  < press Ctrl+C to break >
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*Apr  8 08:41:49: %LINK-3-UPDOWN: Interface FastE
+thernet 0/1, changed state to down.
+*Apr  8 08:41:49: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/1, changed state to down.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*Apr  8 08:41:50: %SPANTREE-5-TOPOT
+RAP: Topology Change Trap.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!
+Success rate is 100 percent (4000/4000), round-trip min/avg/max = 1/2/100 ms
+L3-SW#ping 192.168.1.2 ntimes 4000*Apr  8 08:42:39: %LINEPROTO-5-UPDOWN: Line pr
+otocol on Interface VLAN 1, changed state to down.
+*Apr  8 08:42:41: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to d
+own.
+*Apr  8 08:42:41: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to down.
+*Apr  8 08:42:41: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+*Apr  8 08:42:43: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to up.
+*Apr  8 08:42:44: %LINK-3-UPDOWN: Interface FastEthernet 0/1, changed state to u
+p.
+*Apr  8 08:42:44: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/1, changed state to up.
+*Apr  8 08:42:47: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+*Apr  8 08:42:52: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to u
+p.
+*Apr  8 08:42:52: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to up.
+*Apr  8 08:42:55: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+
+Sending 4000, 100-byte ICMP Echoes to 192.168.1.2, timeout is 2 seconds:
+  < press Ctrl+C to break >
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!.*
+Apr  8 08:43:04: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to do
+wn.
+*Apr  8 08:43:04: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to down.
+*Apr  8 08:43:05: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+.!!!.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!.!!!!!!!!!!!!!!!!!!!!!!!!!!!.!!!!.!!!!!!!!
+!!!!!!!!!!!!!!.!.!!!!!!!!!!.!!!!!!!!.!!!!!!!!!!!!!!!!!!!!.!!!!!!.!!!!!!!!!!!!!!!
+!!!!!!!..!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!.!!!!!!!!!.!!.!!!!!!!!!!.!
+!!!!!!!!!!.!!!!!!!!!!!!!!!.!!!!!!!!!!!!.!!!!!!.!!.!!!!!!!
+Success rate is 99 percent (2353/2376), round-trip min/avg/max = 1/1/100 ms
+L3-SW#ping 192.168.1.2
+Sending 5, 100-byte ICMP Echoes to 192.168.1.2, timeout is 2 seconds:
+  < press Ctrl+C to break >
+..!!!
+Success rate is 60 percent (3/5), round-trip min/avg/max = 1/1/1 ms
+L3-SW#
+
+
+
+
+RG-S2328G-1-2>ena 14
+
+Password:
+RG-S2328G-1-2#con t
+Enter configuration commands, one per line.  End with CNTL/Z.
+RG-S2328G-1-2(config)#
+RG-S2328G-1-2(config)#host
+RG-S2328G-1-2(config)#hostname L2-SW
+L2-SW(config)#int
+L2-SW(config)#interface vlan 1
+L2-SW(config-if-VLAN 1)#ip add
+L2-SW(config-if-VLAN 1)#ip address 192.168.1.2 255.255.255.0
+L2-SW(config-if-VLAN 1)#*Apr  8 08:05:55: %LINK-3-UPDOWN: Interface VLAN 1, chan
+ged state to up.
+*Apr  8 08:05:55: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to up.
+
+L2-SW(config-if-VLAN 1)#no shut
+L2-SW(config-if-VLAN 1)#no shutdown
+L2-SW(config-if-VLAN 1)#exit
+L2-SW(config)#int
+L2-SW(config)#interface f
+L2-SW(config)#interface fastEthernet 0/1
+L2-SW(config-if-FastEthernet 0/1)#sw
+L2-SW(config-if-FastEthernet 0/1)#switchport m
+L2-SW(config-if-FastEthernet 0/1)#switchport mode t
+L2-SW(config-if-FastEthernet 0/1)#switchport mode trunk
+L2-SW(config-if-FastEthernet 0/1)#exit
+L2-SW(config)#interface fastEthernet 0/2
+L2-SW(config-if-FastEthernet 0/2)#switchport mode trunk
+L2-SW(config-if-FastEthernet 0/2)#exit
+L2-SW(config)#spa
+L2-SW(config)#spanning-tree
+Enable spanning-tree.
+L2-SW(config)#spanning-tree m
+L2-SW(config)#spanning-tree m*Apr  8 08:10:24: %SPANTREE-5-TOPOTRAP: Topology Ch
+ange Trap for instance 0.
+
+L2-SW(config)#spanning-tree m
+L2-SW(config)#spanning-tree mo
+L2-SW(config)#spanning-tree mode rstp
+L2-SW(config)#*Apr  8 08:10:43: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+
+L2-SW(config)#show sp
+L2-SW(config)#show spanning-tree
+StpVersion : RSTP
+SysStpStatus : ENABLED
+MaxAge : 20
+HelloTime : 2
+ForwardDelay : 15
+BridgeMaxAge : 20
+BridgeHelloTime : 2
+BridgeForwardDelay : 15
+MaxHops: 20
+TxHoldCount : 3
+PathCostMethod : Long
+BPDUGuard : Disabled
+BPDUFilter : Disabled
+LoopGuardDef  : Disabled
+BridgeAddr : 001a.a94e.b85b
+Priority: 32768
+TimeSinceTopologyChange : 0d:0h:28m:9s
+TopologyChanges : 0
+DesignatedRoot : 8000.001a.a94e.b85b
+RootCost : 0
+RootPort : 0
+L2-SW(config)#sp
+L2-SW(config)#spanning-tree pat
+L2-SW(config)#spanning-tree pathcost met
+L2-SW(config)#spanning-tree pathcost method sh
+L2-SW(config)#spanning-tree pathcost method short
+L2-SW(config)#show
+L2-SW(config)#show sp
+L2-SW(config)#show spanning-tree
+StpVersion : RSTP
+SysStpStatus : ENABLED
+MaxAge : 20
+HelloTime : 2
+ForwardDelay : 15
+BridgeMaxAge : 20
+BridgeHelloTime : 2
+BridgeForwardDelay : 15
+MaxHops: 20
+TxHoldCount : 3
+PathCostMethod : Short
+BPDUGuard : Disabled
+BPDUFilter : Disabled
+LoopGuardDef  : Disabled
+BridgeAddr : 001a.a94e.b85b
+Priority: 32768
+TimeSinceTopologyChange : 0d:0h:31m:53s
+TopologyChanges : 0
+DesignatedRoot : 8000.001a.a94e.b85b
+RootCost : 0
+RootPort : 0
+L2-SW(config)#*Apr  8 08:18:30: %LINEPROTO-5-UPDOWN: Line protocol on Interface
+VLAN 1, changed state to down.
+*Apr  8 08:18:31: %LINK-3-UPDOWN: Interface FastEthernet 0/1, changed state to d
+own.
+*Apr  8 08:18:31: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/1, changed state to down.
+*Apr  8 08:18:32: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+*Apr  8 08:18:35: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to up.
+*Apr  8 08:18:36: %LINK-3-UPDOWN: Interface FastEthernet 0/1, changed state to u
+p.
+*Apr  8 08:18:36: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/1, changed state to up.
+*Apr  8 08:18:37: %SPANTREE-5-ROOTCHANGE: Root Changed: New Root Port is FastEth
+ernet 0/1. New Root Mac Address is 001a.a94d.0383.
+*Apr  8 08:18:38: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+*Apr  8 08:18:40: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to u
+p.
+*Apr  8 08:18:40: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to up.
+
+L2-SW(config)#show spanning-tree
+StpVersion : RSTP
+SysStpStatus : ENABLED
+MaxAge : 20
+HelloTime : 2
+ForwardDelay : 15
+BridgeMaxAge : 20
+BridgeHelloTime : 2
+BridgeForwardDelay : 15
+MaxHops: 20
+TxHoldCount : 3
+PathCostMethod : Short
+BPDUGuard : Disabled
+BPDUFilter : Disabled
+LoopGuardDef  : Disabled
+BridgeAddr : 001a.a94e.b85b
+Priority: 32768
+TimeSinceTopologyChange : 0d:0h:0m:47s
+TopologyChanges : 1
+DesignatedRoot : 1000.001a.a94d.0383
+RootCost : 19
+RootPort : 1
+L2-SW(config)#show spanning-tree int
+L2-SW(config)#show spanning-tree interface 0/1
+                                           ^
+% Invalid input detected at '^' marker.
+
+L2-SW(config)#show spanning-tree interface f0/1
+L2-SW(config)#show spanning-tree interface f
+L2-SW(config)#show spanning-tree interface fastEthernet 0/1
+
+PortAdminPortFast : Disabled
+PortOperPortFast : Disabled
+PortAdminAutoEdge : Enabled
+PortOperAutoEdge : Disabled
+PortAdminLinkType : auto
+PortOperLinkType : point-to-point
+PortBPDUGuard : Disabled
+PortBPDUFilter : Disabled
+PortGuardmode  : None
+PortState : forwarding
+PortPriority : 128
+PortDesignatedRoot : 1000.001a.a94d.0383
+PortDesignatedCost : 0
+PortDesignatedBridge :1000.001a.a94d.0383
+PortDesignatedPort : 6002
+PortForwardTransitions : 3
+PortAdminPathCost : 19
+PortOperPathCost : 19
+Inconsistent states : normal
+PortRole : rootPort
+L2-SW(config)#show spanning-tree interface fastEthernet 0/2
+
+PortAdminPortFast : Disabled
+PortOperPortFast : Disabled
+PortAdminAutoEdge : Enabled
+PortOperAutoEdge : Disabled
+PortAdminLinkType : auto
+PortOperLinkType : point-to-point
+PortBPDUGuard : Disabled
+PortBPDUFilter : Disabled
+PortGuardmode  : None
+PortState : discarding
+PortPriority : 128
+PortDesignatedRoot : 1000.001a.a94d.0383
+PortDesignatedCost : 0
+PortDesignatedBridge :1000.001a.a94d.0383
+PortDesignatedPort : 8001
+PortForwardTransitions : 0
+PortAdminPathCost : 19
+PortOperPathCost : 19
+Inconsistent states : normal
+PortRole : alternatePort
+L2-SW(config)#*Apr  8 08:23:13: %LINK-3-UPDOWN: Interface FastEthernet 0/2, chan
+ged state to down.
+*Apr  8 08:23:13: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to down.
+*Apr  8 08:24:03: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to down.
+*Apr  8 08:24:04: %LINK-3-UPDOWN: Interface FastEthernet 0/1, changed state to d
+own.
+*Apr  8 08:24:04: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/1, changed state to down.
+*Apr  8 08:24:04: %SPANTREE-5-EVENT: The device has been selected as the Root Br
+idge.
+*Apr  8 08:24:05: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+*Apr  8 08:24:07: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to up.
+*Apr  8 08:24:08: %LINK-3-UPDOWN: Interface FastEthernet 0/1, changed state to u
+p.
+*Apr  8 08:24:08: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/1, changed state to up.
+*Apr  8 08:24:09: %SPANTREE-5-ROOTCHANGE: Root Changed: New Root Port is FastEth
+ernet 0/1. New Root Mac Address is 001a.a94d.0383.
+*Apr  8 08:24:10: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+*Apr  8 08:24:16: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to u
+p.
+*Apr  8 08:24:16: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to up.
+*Apr  8 08:24:17: %SPANTREE-5-ROOTCHANGE: Root Changed: New Root Port is FastEth
+ernet 0/2. New Root Mac Address is 001a.a94d.0383.
+*Apr  8 08:24:18: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+*Apr  8 08:24:28: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to d
+own.
+*Apr  8 08:24:28: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to down.
+*Apr  8 08:24:28: %SPANTREE-5-ROOTCHANGE: Root Changed: New Root Port is FastEth
+ernet 0/1. New Root Mac Address is 001a.a94d.0383.
+*Apr  8 08:24:29: %SPANTREE-5-TOPOTRAP: Topology Change Trap.
+
+L2-SW CON0 is now available
+
+
+Press RETURN to get started
+*Apr  8 08:30:43: %SYS-5-CONFIG_I: Configured from console by console
+
