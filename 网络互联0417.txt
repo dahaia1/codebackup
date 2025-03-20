@@ -1,0 +1,307 @@
+
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>?
+Exec commands:
+  <1-99>                  Session number to resume
+  disable                 Turn off privileged commands
+  disconnect              Disconnect an existing network connection
+  enable                  Turn on privileged commands
+  exit                    Exit from the EXEC
+  help                    Description of the interactive help system
+  lock                    Lock the terminal
+  oamping                 Send atm oam loopback messages
+  ping                    Send echo messages
+  ping6                   Ping6
+  show                    Show running system information
+  start-terminal-service  Start terminal service
+  telnet                  Open a telnet connection
+  traceroute              Trace route to destination
+
+RG-RSR20-18-1-1>e?
+enable  exit
+
+RG-RSR20-18-1-1>en
+RG-RSR20-18-1-1>en
+RG-RSR20-18-1-1>enable 14
+
+Password:
+RG-RSR20-18-1-1#copy ?
+% Unrecognized command.
+
+RG-RSR20-18-1-1#confit
+
+Translating "confit"...
+% Unrecognized host or address, or protocol not running.
+RG-RSR20-18-1-1#confit
+RG-RSR20-18-1-1#confi t
+Enter configuration commands, one per line.  End with CNTL/Z.
+RG-RSR20-18-1-1(config)#end
+RG-RSR20-18-1-1#*Apr 17 09:14:54: %SYS-5-CONFIG_I: Configured from console by co
+nsole
+
+RG-RSR20-18-1-1#confi t
+Enter configuration commands, one per line.  End with CNTL/Z.
+RG-RSR20-18-1-1(config)#int
+RG-RSR20-18-1-1(config)#interface f
+RG-RSR20-18-1-1(config)#interface fastEthernet 0/0
+RG-RSR20-18-1-1(config-if-FastEthernet 0/0)#
+RG-RSR20-18-1-1#*Apr 17 09:15:18: %SYS-5-CONFIG_I: Configured from console by co
+nsole
+
+RG-RSR20-18-1-1#ping 1.1.1.1
+Sending 5, 100-byte ICMP Echoes to 1.1.1.1, timeout is 2 seconds:
+  < press Ctrl+C to break >
+
+Success rate is 0 percent (0/1)
+RG-RSR20-18-1-1#con t
+Enter configuration commands, one per line.  End with CNTL/Z.
+RG-RSR20-18-1-1(config)#host
+RG-RSR20-18-1-1(config)#hostname RouterA
+RouterA(config)#banner motd &
+Enter TEXT message.  End with the character '&'.
+are admin,you can config it.if you are not admin please EXIT.&
+RouterA(config)#exit
+RouterA#*Apr 17 09:19:27: %SYS-5-CONFIG_I: Configured from console by console
+
+RouterA#exit
+
+RouterA CON0 is now available
+
+
+Press RETURN to get started
+
+
+Welcome to RouterA,if you are admin,you can config it.if you are not admin pleas
+e EXIT.
+
+RouterA>ena 14
+
+Password:
+RouterA#cont
+
+Translating "cont"...
+% Unrecognized host or address, or protocol not running.
+RouterA#con t
+Enter configuration commands, one per line.  End with CNTL/Z.
+RouterA(config)#int
+RouterA(config)#interface f
+RouterA(config)#interface fastEthernet 0/0
+RouterA(config-if-FastEthernet 0/0)#ip add
+RouterA(config-if-FastEthernet 0/0)#ip address 192.168.1.1 255.255.255.0
+RouterA(config-if-FastEthernet 0/0)#no shut
+RouterA(config-if-FastEthernet 0/0)#no shutdown
+RouterA(config-if-FastEthernet 0/0)#end
+RouterA#*Apr 17 09:21:22: %SYS-5-CONFIG_I: Configured from console by console
+
+RouterA#show
+RouterA#show i
+RouterA#show int
+RouterA#show interfaces f
+RouterA#show interfaces fastEthernet 0/0
+Index(dec):1 (hex):1
+FastEthernet 0/0 is DOWN  , line protocol is DOWN
+Hardware is MPC8248 FCC FAST ETHERNET CONTROLLER FastEthernet, address is 001a.a
+93a.2ac7 (bia 001a.a93a.2ac7)
+Interface address is: 192.168.1.1/24
+ARP type: ARPA,ARP Timeout: 3600 seconds
+  MTU 1500 bytes, BW 100000 Kbit
+  Encapsulation protocol is Ethernet-II, loopback not set
+  Keepalive interval is 10 sec , set
+  Carrier delay is 2 sec
+  RXload is 1 ,Txload is 1
+  Queueing strategy: FIFO
+    Output queue 0/40, 0 drops;
+    Input queue 0/75, 0 drops
+  5 minutes input rate 0 bits/sec, 0 packets/sec
+  5 minutes output rate 0 bits/sec, 0 packets/sec
+    0 packets input, 0 bytes, 0 no buffer, 0 dropped
+    Received 0 broadcasts, 0 runts, 0 giants
+    0 input errors, 0 CRC, 0 frame, 0 overrun, 0 abort
+    0 packets output, 0 bytes, 0 underruns , 0 dropped
+    0 output errors, 0 collisions, 5 interface resets
+RouterA#*Apr 17 09:22:47: %LINK-3-UPDOWN: Interface FastEthernet 0/0, changed st
+ate to up.
+*Apr 17 09:22:47: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/0, changed state to up.
+
+RouterA#show interfaces fastEthernet 0/0
+Index(dec):1 (hex):1
+FastEthernet 0/0 is UP  , line protocol is UP
+Hardware is MPC8248 FCC FAST ETHERNET CONTROLLER FastEthernet, address is 001a.a
+93a.2ac7 (bia 001a.a93a.2ac7)
+Interface address is: 192.168.1.1/24
+ARP type: ARPA,ARP Timeout: 3600 seconds
+  MTU 1500 bytes, BW 100000 Kbit
+  Encapsulation protocol is Ethernet-II, loopback not set
+  Keepalive interval is 10 sec , set
+  Carrier delay is 2 sec
+  RXload is 1 ,Txload is 1
+  Queueing strategy: FIFO
+    Output queue 0/40, 0 drops;
+    Input queue 0/75, 0 drops
+  Link Mode: 100M/Full-Duplex
+  5 minutes input rate 0 bits/sec, 0 packets/sec
+  5 minutes output rate 1 bits/sec, 0 packets/sec
+    0 packets input, 0 bytes, 0 no buffer, 0 dropped
+    Received 0 broadcasts, 0 runts, 0 giants
+    0 input errors, 0 CRC, 0 frame, 0 overrun, 0 abort
+    1 packets output, 42 bytes, 0 underruns , 0 dropped
+    0 output errors, 0 collisions, 5 interface resets
+RouterA#show vis
+RouterA#show ver
+RouterA#show version
+System description      : Ruijie Router (RSR20-18) by Ruijie Networks Co.£¬Ltd.
+System start time       : 2024-04-17 8:45:16
+System uptime           : 0:0:38:7
+System hardware version : 1.01
+System software version : RGOS 10.3(5), Release(73492)
+System BOOT version     : 10.3.73492
+RouterA#show run
+RouterA#show ip rou
+RouterA#show ip route
+
+Codes:  C - connected, S - static, R - RIP, B - BGP
+        O - OSPF, IA - OSPF inter area
+        N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+        E1 - OSPF external type 1, E2 - OSPF external type 2
+        i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+        ia - IS-IS inter area, * - candidate default
+
+Gateway of last resort is no set
+C    192.168.1.0/24 is directly connected, FastEthernet 0/0
+C    192.168.1.1/32 is local host.
+RouterA#show run
+RouterA#show running-config
+
+Building configuration...
+Current configuration : 692 bytes
+
+!
+version RGOS 10.3(5), Release(73492)(Tue Dec 29 17:49:54 CST 2009 -ubuntu62)
+hostname RouterA
+!
+!
+!
+!
+!
+!
+no service password-encryption
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Serial 3/0
+ clock rate 64000
+!
+interface FastEthernet 0/0
+ ip address 192.168.1.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet 0/1
+ duplex auto
+ speed auto
+!
+interface FastEthernet 0/2
+ duplex auto
+ speed auto
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ref parameter 50 400
+line con 0
+line aux 0
+line vty 0 4
+ login
+!
+banner motd ^C
+Welcome to RouterA,if you are admin,you can config it.if you are not admin pleas
+e EXIT.^C
+!
+end
+
+RouterA#
+RouterA#
+RouterA#
+RouterA#
+RouterA#
+RouterA#reload
+Processed with reload? [no]yes
+
+*Ap
+System bootstrap ...
+Boot Version: RGOS 10.3(5), Release(73492)
+Nor Flash ID: 0x00010049, SIZE: 2097152Bytes
+MTD_DRIVER-5-MTD_NAND_FOUND: 1 NAND chips(chip size : 33554432) detected
+MTD_DRIVER-5-MTD_NAND_FOUND: 1 nand chip(s) found on the target.
+Waiting for subcard to initialize ..................
+Press Ctrl+C to enter Boot Menu ......
+Main Program File Name rgos.bin, Load Main Program ...
+
+Executing program, launch at: 0x00010000
+Ruijie General Operating System Software
+Release Software (tm), RGOS 10.3(5), Release(73492), Compiled Tue Dec 29 17:49:5
+4 CST 2009 by ubuntu62
+
+Copyright (c) 1998-2009s by Ruijie Networks.
+All Rights Reserved.
+Decompiling or Reverse Engineering is Not Allowed.
+
+*Apr 17 09:26:06: %MTD_DRIVER-5-MTD_NAND_FOUND: 1 NAND chips(chip size : 3355443
+2) detected
+*Apr 17 09:26:06: %MTD_DRIVER-5-MTD_NAND_FOUND: 1 nand chip(s) found on the targ
+et.
+*Apr 17 09:26:27: %LINK-3-UPDOWN: Interface FastEthernet 0/0, changed state to u
+p.
+*Apr 17 09:26:27: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/0, changed state to up.
+
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>*Apr 17 09:26:42: %SYS-5-WARMSTART: System warmstart.
+
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
