@@ -1,0 +1,590 @@
+  5 minutes input rate 0 bits/sec, 0 packets/sec
+  5 minutes output rate 0 bits/sec, 0 packets/sec
+    0 packets input, 0 bytes, 0 no buffer, 0 dropped
+    Received 0 broadcasts, 0 runts, 0 giants
+    0 input errors, 0 CRC, 0 frame, 0 overrun, 0 abort
+    0 packets output, 0 bytes, 0 underruns , 0 dropped
+    0 output errors, 0 collisions, 1 interface resets
+RouterA(config)#ip route 10.1.1.0 255.255.255.0 192.168.1.2
+RouterA(config)#ip route 10.2.2.0 255.255.255.0 s4/0
+RouterA(config)#*Apr 18 11:00:51: %LINK-3-UPDOWN: Interface Serial 4/0, changed
+state to up.
+*Apr 18 11:00:51: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial 4/0, ch
+anged state to up.
+
+RouterA(config)#
+RouterA(config)#show ip route
+
+Codes:  C - connected, S - static, R - RIP, B - BGP
+        O - OSPF, IA - OSPF inter area
+        N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+        E1 - OSPF external type 1, E2 - OSPF external type 2
+        i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+        ia - IS-IS inter area, * - candidate default
+
+Gateway of last resort is no set
+S    10.1.1.0/24 [1/0] via 192.168.1.2
+S    10.2.2.0/24 is directly connected, Serial 4/0
+C    172.16.1.0/24 is directly connected, Loopback 0
+C    172.16.1.1/32 is local host.
+C    172.16.2.0/24 is directly connected, Loopback 1
+C    172.16.2.1/32 is local host.
+C    192.168.1.0/24 is directly connected, Serial 4/0
+C    192.168.1.1/32 is local host.
+RouterA(config)#show interfaces serial 4/0
+Index(dec):4 (hex):4
+Serial 4/0 is UP  , line protocol is UP
+Hardware is SIC-1HS HDLC CONTROLLER Serial
+Interface address is: 192.168.1.1/24
+  MTU 1500 bytes, BW 2000 Kbit
+  Encapsulation protocol is HDLC, loopback not set
+  Keepalive interval is 10 sec , set
+  Carrier delay is 2 sec
+  RXload is 1 ,Txload is 1
+  Queueing strategy: FIFO
+    Output queue 0/40, 0 drops;
+    Input queue 0/75, 0 drops
+    25 carrier transitions
+    V35 DTE cable
+    DCD=up  DSR=up  DTR=up  RTS=up  CTS=up
+  5 minutes input rate 8 bits/sec, 0 packets/sec
+  5 minutes output rate 8 bits/sec, 0 packets/sec
+    13 packets input, 286 bytes, 0 no buffer, 0 dropped
+    Received 13 broadcasts, 0 runts, 0 giants
+    30 input errors, 1 CRC, 21 frame, 0 overrun, 8 abort
+    13 packets output, 286 bytes, 0 underruns , 0 dropped
+    0 output errors, 0 collisions, 3 interface resets
+RouterA(config)#ping 10.1.1.1
+% Unknown command.
+
+RouterA(config)#serial 4/0 is UP ,line protocol is UP
+% Unknown command.
+
+RouterA(config)#show ip route
+
+Codes:  C - connected, S - static, R - RIP, B - BGP
+        O - OSPF, IA - OSPF inter area
+        N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+        E1 - OSPF external type 1, E2 - OSPF external type 2
+        i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+        ia - IS-IS inter area, * - candidate default
+
+Gateway of last resort is no set
+S    10.1.1.0/24 [1/0] via 192.168.1.2
+S    10.2.2.0/24 is directly connected, Serial 4/0
+C    172.16.1.0/24 is directly connected, Loopback 0
+C    172.16.1.1/32 is local host.
+C    172.16.2.0/24 is directly connected, Loopback 1
+C    172.16.2.1/32 is local host.
+C    192.168.1.0/24 is directly connected, Serial 4/0
+C    192.168.1.1/32 is local host.
+RouterA(config)#show interfaces serial 4/0
+Index(dec):4 (hex):4
+Serial 4/0 is UP  , line protocol is UP
+Hardware is SIC-1HS HDLC CONTROLLER Serial
+Interface address is: 192.168.1.1/24
+  MTU 1500 bytes, BW 2000 Kbit
+  Encapsulation protocol is HDLC, loopback not set
+  Keepalive interval is 10 sec , set
+  Carrier delay is 2 sec
+  RXload is 1 ,Txload is 1
+  Queueing strategy: FIFO
+    Output queue 0/40, 0 drops;
+    Input queue 0/75, 0 drops
+    25 carrier transitions
+    V35 DTE cable
+    DCD=up  DSR=up  DTR=up  RTS=up  CTS=up
+  5 minutes input rate 16 bits/sec, 0 packets/sec
+  5 minutes output rate 16 bits/sec, 0 packets/sec
+    29 packets input, 638 bytes, 0 no buffer, 0 dropped
+    Received 29 broadcasts, 0 runts, 0 giants
+    30 input errors, 1 CRC, 21 frame, 0 overrun, 8 abort
+    29 packets output, 638 bytes, 0 underruns , 0 dropped
+    0 output errors, 0 collisions, 3 interface resets
+RouterA(config)#exit
+RouterA#*Apr 18 11:09:09: %SYS-5-CONFIG_I: Configured from console by console
+
+RouterA#ping 10.1.1.1
+Sending 5, 100-byte ICMP Echoes to 10.1.1.1, timeout is 2 seconds:
+  < press Ctrl+C to break >
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 30/30/30 ms
+RouterA#ping 10.2.2.1
+Sending 5, 100-byte ICMP Echoes to 10.2.2.1, timeout is 2 seconds:
+  < press Ctrl+C to break >
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 30/30/30 ms
+RouterA#
+RouterA CON0 is now available
+
+
+Press RETURN to get started
+*Apr 18 11:46:32: %LINK-3-UPDOWN: Interface Serial 4/0, changed state to down.
+*Apr 18 11:46:32: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial 4/0, ch
+anged state to down.
+
+L3-SW(config)#aggregateport load-balance *Apr 18 13:21:07: %LINEPROTO-5-UPDOWN:
+Line protocol on Interface VLAN 1, changed state to up.
+?
+  src-dst-ip   Source and destination IP address
+  src-dst-mac  Source and destination MAC address
+
+L3-SW(config)#aggregateport load-balance *Apr 18 13:21:08: %LINK-3-UPDOWN: Inter
+face FastEthernet 0/2, changed state to up.
+*Apr 18 13:21:08: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to up.
+*Apr 18 13:21:15: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to down.
+*Apr 18 13:21:16: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to d
+own.
+*Apr 18 13:21:16: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to down.
+*Apr 18 13:21:17: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to up.
+*Apr 18 13:21:19: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to u
+p.
+*Apr 18 13:21:19: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to up.
+*Apr 18 13:21:20: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to down.
+*Apr 18 13:21:21: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to d
+own.
+*Apr 18 13:21:21: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to down.
+
+% Incomplete command.
+
+L3-SW(config)#
+L3-SW(config)#
+L3-SW(config)#ag*Apr 18 13:21:35: %LINEPROTO-5-UPDOWN: Line protocol on Interfac
+e VLAN 1, changed state to up.
+g*Apr 18 13:21:36: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to
+up.
+*Apr 18 13:21:36: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to up.
+*Apr 18 13:21:40: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to down.
+*Apr 18 13:21:42: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to up.
+
+% Incomplete command.
+
+L3-SW(config)#
+L3-SW(config)#
+L3-SW(config)#aggregateport load-balance ?
+  src-dst-ip   Source and destination IP address
+  src-dst-mac  Source and destination MAC address
+
+L3-SW(config)#aggregateport load-balance *Apr 18 13:22:11: %LINEPROTO-5-UPDOWN:
+Line protocol on Interface VLAN 1, changed state to down.
+*Apr 18 13:22:12: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to d
+own.
+*Apr 18 13:22:12: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to down.
+*Apr 18 13:22:13: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to up.
+*Apr 18 13:22:14: %LINK-3-UPDOWN: Interface FastEthernet 0/1, changed state to u
+p.
+*Apr 18 13:22:14: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/1, changed state to up.
+*Apr 18 13:22:17: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to down.
+*Apr 18 13:22:18: %LINK-3-UPDOWN: Interface FastEthernet 0/1, changed state to d
+own.
+*Apr 18 13:22:18: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/1, changed state to down.
+*Apr 18 13:22:19: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to up.
+*Apr 18 13:22:20: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to u
+p.
+*Apr 18 13:22:20: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to up.
+
+% Incomplete command.
+
+L3-SW(config)#aggregateport load-balance dst-mac*Apr 18 13:23:03: %LINEPROTO-5-U
+PDOWN: Line protocol on Interface VLAN 1, changed state to down.
+
+                                         ^
+% Invalid input detected at '^' marker.
+
+L3-SW(config)#*Apr 18 13:23:04: %LINK-3-UPDOWN: Interface FastEthernet 0/2, chan
+ged state to down.
+*Apr 18 13:23:04: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to down.
+
+L3-SW(config)#aggregateport load-balance dst-msc
+                                         ^
+% Invalid input detected at '^' marker.
+
+L3-SW(config)#exit
+L3-SW#*Apr 18 13:24:03: %SYS-5-CONFIG_I: Configured from console by console
+
+L3-SW#
+
+L3-SW#show aggregatrPort load-balance
+                   ^
+% Invalid input detected at '^' marker.
+
+L3-SW#show aggregatePort load-balance
+Load-balance   : Source MAC and Destination MAC
+L3-SW#show aggregatePort summary
+AggregatePort MaxPorts SwitchPort Mode   Ports
+------------- -------- ---------- ------ ----------------------------------
+Ag1           8        Enabled    TRUNK
+L3-SW#show interfaces aggregateport 1
+Index(dec):29 (hex):1d
+AggregatePort 1 is DOWN  , line protocol is DOWN
+Hardware is Aggregate Link AggregatePort
+Interface address is: no ip address
+  MTU 1500 bytes, BW 1000000 Kbit
+  Encapsulation protocol is Bridge, loopback not set
+  Keepalive interval is 10 sec , set
+  Carrier delay is 2 sec
+  RXload is 1 ,Txload is 1
+  Queueing strategy: FIFO
+    Output queue 0/0, 0 drops;
+    Input queue 0/75, 0 drops
+  Switchport attributes:
+    interface's description:""
+    medium-type is copper
+    lastchange time:0 Day: 1 Hour:10 Minute:27 Second
+    Priority is 0
+    admin duplex mode is AUTO, oper duplex is Unknown
+    admin speed is AUTO, oper speed is Unknown
+    flow control admin status is OFF,flow control oper status is Unknown
+    broadcast Storm Control is OFF,multicast Storm Control is OFF,unicast Storm
+Control is OFF
+Aggregate Port Informations:
+        Aggregate Number: 1
+        Name: "AggregatePort 1"
+        Refs: 2
+        Members: (count=0)
+L3-SW#
+L3-SW#
+
+L2-SW#
+L2-SW#show aggregatePort load-balance
+Load-balance   : Source MAC and Destination MAC
+L2-SW#show aggregatePort summary
+AggregatePort MaxPorts SwitchPort Mode   Ports
+------------- -------- ---------- ------ ----------------------------------
+Ag1           8        Enabled    TRUNK  Fa0/1   ,Fa0/2
+L2-SW#show interfaces aggregatePort 1
+Index(dec):27 (hex):1b
+AggregatePort 1 is DOWN  , line protocol is DOWN
+Hardware is Aggregate Link AggregatePort
+Interface address is: no ip address
+  MTU 1500 bytes, BW 1000000 Kbit
+  Encapsulation protocol is Bridge, loopback not set
+  Keepalive interval is 10 sec , set
+  Carrier delay is 2 sec
+  RXload is 1 ,Txload is 1
+  Queueing strategy: WFQ
+  Switchport attributes:
+    interface's description:""
+    medium-type is copper
+    lastchange time:0 Day: 1 Hour:12 Minute:25 Second
+    Priority is 0
+    admin duplex mode is AUTO, oper duplex is Unknown
+    admin speed is AUTO, oper speed is Unknown
+    flow control admin status is OFF,flow control oper status is Unknown
+    broadcast Storm Control is ON,multicast Storm Control is OFF,unicast Storm C
+ontrol is ON
+Aggregate Port Informations:
+        Aggregate Number: 1
+        Name: "AggregatePort 1"
+        Refs: 6
+        Members: (count=2)
+        FastEthernet 0/1 Link Status: Down
+        FastEthernet 0/2 Link Status: Down
+
+L2-SW#
+L2-SW#
+
+L3-SW#*Apr 18 13:30:10: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1,
+changed state to up.
+*Apr 18 13:30:11: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed state to u
+p.
+*Apr 18 13:30:11: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to up.
+
+L3-SW#show interfaces aggregateport 1
+Index(dec):29 (hex):1d
+AggregatePort 1 is DOWN  , line protocol is DOWN
+Hardware is Aggregate Link AggregatePort
+Interface address is: no ip address
+  MTU 1500 bytes, BW 1000000 Kbit
+  Encapsulation protocol is Bridge, loopback not set
+  Keepalive interval is 10 sec , set
+  Carrier delay is 2 sec
+  RXload is 1 ,Txload is 1
+  Queueing strategy: FIFO
+    Output queue 0/0, 0 drops;
+    Input queue 0/75, 0 drops
+  Switchport attributes:
+    interface's description:""
+    medium-type is copper
+    lastchange time:0 Day: 1 Hour:10 Minute:27 Second
+    Priority is 0
+    admin duplex mode is AUTO, oper duplex is Unknown
+    admin speed is AUTO, oper speed is Unknown
+    flow control admin status is OFF,flow control oper status is Unknown
+    broadcast Storm Control is OFF,multicast Storm Control is OFF,unicast Storm
+Control is OFF
+Aggregate Port Informations:
+        Aggregate Number: 1
+        Name: "AggregatePort 1"
+        Refs: 2
+        Members: (count=0)
+L3-SW#
+L3-SW#
+L3-SW#
+L3-SW#
+L3-SW#
+
+L2-SW#
+L2-SW#show interfaces aggregatePort 1
+Index(dec):27 (hex):1b
+AggregatePort 1 is UP  , line protocol is UP
+Hardware is Aggregate Link AggregatePort
+Interface address is: no ip address
+  MTU 1500 bytes, BW 1000000 Kbit
+  Encapsulation protocol is Bridge, loopback not set
+  Keepalive interval is 10 sec , set
+  Carrier delay is 2 sec
+  RXload is 1 ,Txload is 1
+  Queueing strategy: WFQ
+  Switchport attributes:
+    interface's description:""
+    medium-type is copper
+    lastchange time:0 Day: 1 Hour:20 Minute:55 Second
+    Priority is 0
+    admin duplex mode is AUTO, oper duplex is Full
+    admin speed is AUTO, oper speed is 100M
+    flow control admin status is OFF,flow control oper status is OFF
+    broadcast Storm Control is ON,multicast Storm Control is OFF,unicast Storm C
+ontrol is ON
+Aggregate Port Informations:
+        Aggregate Number: 1
+        Name: "AggregatePort 1"
+        Refs: 6
+        Members: (count=2)
+        FastEthernet 0/1 Link Status: Down
+        FastEthernet 0/2 Link Status: Up
+
+L2-SW#
+L2-SW#
+
+L3-SW#
+L3-SW#vla*Apr 18 13:31:23: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN
+1, changed state to down.
+n
+
+Translating "vlan"...
+% Unrecognized host or address, or protocol not running.
+L3-SW#*Apr 18 13:31:24: %LINK-3-UPDOWN: Interface FastEthernet 0/2, changed stat
+e to down.
+*Apr 18 13:31:24: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet 0
+/2, changed state to down.
+
+L3-SW#vlan 10
+
+Translating "vlan"...
+% Unrecognized host or address, or protocol not running.
+L3-SW#configure interminal
+                ^
+% Invalid input detected at '^' marker.
+
+L3-SW#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+L3-SW(config)#vlan 10
+L3-SW(config-vlan)#exit
+L3-SW(config)#interface vlan 10
+L3-SW(config-if-VLAN 10)#ip address 192.168.10.1 255.255.255.0
+L3-SW(config-if-VLAN 10)#no shutdown
+L3-SW(config-if-VLAN 10)#exit
+L3-SW(config)#
+
+L2-SW#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+L2-SW(config)#ip default-gateway 192.168.1.1
+L2-SW(config)#exit
+L2-SW#*Apr 18 16:23:37: %SYS-5-CONFIG_I: Configured from console by console
+
+L2-SW#ping 192.168.1.1
+Sending 5, 100-byte ICMP Echoes to 192.168.1.1, timeout is 2 seconds:
+  < press Ctrl+C to break >
+.....
+Success rate is 0 percent (0/5)
+L2-SW#ping*Apr 18 16:24:48: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN
+ 1, changed state to up.
+91*Apr 18 16:24:50: %LINK-3-UPDOWN: Interface AggregatePort 1, changed state to
+up.
+*Apr 18 16:24:50: %LINEPROTO-5-UPDOWN: Line protocol on Interface AggregatePort
+1, changed state to up.
+
+Protocol [ip]:
+Target IP address:
+
+Translating ""...
+% Unrecognized host or address, or protocol not running.
+L2-SW#
+L2-SW#ping 192.168.1.1
+Sending 5, 100-byte ICMP Echoes to 192.168.1.1, timeout is 2 seconds:
+  < press Ctrl+C to break >
+*Apr 18 16:25:12: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to down.
+.*Apr 18 16:25:14: %LINK-3-UPDOWN: Interface AggregatePort 1, changed state to d
+own.
+*Apr 18 16:25:14: %LINEPROTO-5-UPDOWN: Line protocol on Interface AggregatePort
+1, changed state to down.
+....
+Success rate is 0 percent (0/5)
+L2-SW#
+L2-SW#ping 192.*Apr 18 16:25:35: %LINEPROTO-5-UPDOWN: Line protocol on Interface
+ VLAN 1, changed state to up.
+168*Apr 18 16:25:37: %LINK-3-UPDOWN: Interface AggregatePort 1, changed state to
+ up.
+*Apr 18 16:25:37: %LINEPROTO-5-UPDOWN: Line protocol on Interface AggregatePort
+1, changed state to up.
+
+% Unrecognized host or address.
+L2-SW#192.168.1.1
+Trying 192.168.1.1, 23...
+*Apr 18 16:25:47: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1, change
+d state to down.
+*Apr 18 16:25:49: %LINK-3-UPDOWN: Interface AggregatePort 1, changed state to do
+wn.
+*Apr 18 16:25:49: %LINEPROTO-5-UPDOWN: Line protocol on Interface AggregatePort
+1, changed state to down.
+
+RG-RSR20-18-1-2>
+RG-RSR20-18-1-2>
+RG-RSR20-18-1-2>ena 14
+
+Password:
+RG-RSR20-18-1-2#con t
+Enter configuration commands, one per line.  End with CNTL/Z.
+RG-RSR20-18-1-2(config)#host
+RG-RSR20-18-1-2(config)#hostname RouterB
+RouterB(config)#int
+RouterB(config)#interface s
+RouterB(config)#interface serial 4/0
+RouterB(config-if-Serial 4/0)#ip
+RouterB(config-if-Serial 4/0)#ip ad
+RouterB(config-if-Serial 4/0)#ip address 192.168.1.2 255.255.255.0
+RouterB(config-if-Serial 4/0)#no shut
+RouterB(config-if-Serial 4/0)#no shutdown
+RouterB(config-if-Serial 4/0)#exit
+RouterB(config)#line vty 0 4
+RouterB(config-line)#pass
+RouterB(config-line)#password star
+RouterB(config-line)#logi
+RouterB(config-line)#login
+RouterB(config-line)#end
+RouterB#*Apr 22 09:15:43: %SYS-5-CONFIG_I: Configured from console by console
+
+RouterB#*Apr 22 09:18:08: %LINK-3-UPDOWN: Interface Serial 4/0, changed state to
+ up.
+*Apr 22 09:18:08: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial 4/0, ch
+anged state to up.
+
+RouterB#teln
+RouterB#telnet 192.168.1.1
+Trying 192.168.1.1, 23...
+
+User Access Verification
+
+Password:
+
+RouterA>
+RouterA>
+RouterA>
+RouterA>ena
+
+Password:
+Password:
+Password:
+
+% Access denied
+RouterA>ena 14
+
+Password:
+RouterA#exit
+RouterB#*Apr 22 09:21:24: %LINK-3-UPDOWN: Interface Serial 4/0, changed state to
+ down.
+*Apr 22 09:21:24: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial 4/0, ch
+anged state to down.
+
+RouterB CON0 is now available
+
+
+Press RETURN to get started
+
+
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>
+RG-RSR20-18-1-1>ena 14
+
+Password:
+RG-RSR20-18-1-1#con t
+Enter configuration commands, one per line.  End with CNTL/Z.
+RG-RSR20-18-1-1(config)#host
+RG-RSR20-18-1-1(config)#hostname RouterA
+RouterA(config)#in
+RouterA(config)#interface s
+RouterA(config)#interface serial 3/0
+RouterA(config-if-Serial 3/0)#cl
+RouterA(config-if-Serial 3/0)#clock r
+RouterA(config-if-Serial 3/0)#clock rate 512000
+RouterA(config-if-Serial 3/0)#ip add
+RouterA(config-if-Serial 3/0)#ip address 192.168.1.1 255.255.255.0
+RouterA(config-if-Serial 3/0)#no
+RouterA(config-if-Serial 3/0)#no
+RouterA(config-if-Serial 3/0)#nos
+RouterA(config-if-Serial 3/0)#nosh
+RouterA(config-if-Serial 3/0)#noshu
+RouterA(config-if-Serial 3/0)#no shut
+RouterA(config-if-Serial 3/0)#no shutdown
+RouterA(config-if-Serial 3/0)#exit
+RouterA(config)#line vty 0 4
+RouterA(config-line)#pass
+RouterA(config-line)#password star
+RouterA(config-line)#login
+RouterA(config-line)#exit
+RouterA(config)#*Apr 22 09:24:57: %LINK-3-UPDOWN: Interface Serial 3/0, changed
+state to up.
+*Apr 22 09:24:57: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial 3/0, ch
+anged state to up.
+
+RouterA(config)#exit
+RouterA#*Apr 22 09:25:20: %SYS-5-CONFIG_I: Configured from console by console
+
+RouterA#ping 192.168.1.2
+Sending 5, 100-byte ICMP Echoes to 192.168.1.2, timeout is 2 seconds:
+  < press Ctrl+C to break >
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/4/10 ms
+RouterA#teln
+RouterA#telnet 192.168.1.2
+Trying 192.168.1.2, 23...
+
+User Access Verification
+
+Password:
+
+RouterB>ena 14
+
+Password:
+RouterB#exit
+RouterA#*Apr 22 09:28:13: %LINK-3-UPDOWN: Interface Serial 3/0, changed state to
+ down.
+*Apr 22 09:28:13: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial 3/0, ch
+anged state to down.
+
+RouterA CON0 is now available
+
+
+Press RETURN to get started
