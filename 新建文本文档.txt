@@ -1,0 +1,13 @@
+wn.listen()
+wn.onkeypress(go_up, "w")
+wn.onkeypress(go_down, "s")
+wn.onkeypress(go_left, "a")
+wn.onkeypress(go_right, "d")
+
+while True:
+    wn.updeat()
+    if head.distance(food) < 20:
+        x = random.randint(-290,290)
+        y = random.randint(-290,290)
+
+

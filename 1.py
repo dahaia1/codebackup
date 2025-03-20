@@ -1,88 +1,80 @@
-from turtle import *
-from time import sleep
-
-def go_to(x,y):
-    up()
-    goto(x,y)
-    down()
-
-def head(x,y,r):
-    go_to(x,y)
-    speed(1)
-    circle(r)
-    leg(x,y)
-
-def leg(x,y):
-    right(90)
-    forward(180)
-    right(30)
-    forward(100)
-    left(120)
-    go_to(x,y-180)
-    forward(100)
-    right(120)
-    forward(100)
-    left(120)
-    hand(x,y)
-
-def hand(x,y):
-    go_to(x,y-60)
-    forward(100)
-    left(60)
-    forward(100)
-    go_to(x,y-90)
-    right(60)
-    forward(100)
-    right(60)
-    forward(100)
-    left(60)
-    eye(x,y)
-
-def eye(x,y):
-    go_to(x-50,y+130)
-    right(90)
-    forward(50)
-    go_to(x+40,y+130)
-    forward(50)
-    left(90)
-
-def big_Circle(size):
-    speed(20)
-    for i in range(150):
-        forward(size)
-        right(0.3)
-
-def line(size):
-    speed(1)
-    forward(51*size)
-
-def small_Circle(size):
-    speed(10)
-    for i in range(210):
-        forward(size)
-        right(0.786)
-
-def heart(x,y,size):
-    go_to(x,y)
-    left(150)
-    begin_fill()
-    line(size)
-    big_Circle(size)
-    small_Circle(size)
-    left(120)
-    small_Circle(size)
-    big_Circle(size)
-    line(size)
-    end_fill()
-
-def main():
-    pensize(2)
-    color('red','pink')
-    head(-120,100,100)
-    heart(250,-80,1)
-    go_to(200,-300)
-    write("To:送给智慧与美貌并存的你！",move=True,align="left",font=("楷体",20,"normal"))
-    done()
+class Node(object):
+    def __init__(self,item):
+        self.item=item
+        self.next=None
+        self.prev=None
+class DLinkList(object):
+    def __init__(self):
+        self._head=None
+    def is_empty(self):
+        return self._head==None
+    def get_length(self):
+        cur=self._head
+        count=0
+        while cur!=None:
+            count=count+1
+            cur=cur.next
+        return count
+    def travel(self):
+        cur=self._head
+        while cur!=None:
+            print(cur.item)
+            cur=cur.next
+        print("")
+    def add(self,item):
+        node=Node(item)
+        if self.is_empty():
+            self._head=node
+        else:
+            node.next=self._head
+            self._head.prev=node
+            self._head=node
+    def append(self,item):
+        if self.is_empty():
+            self._head=node
+        else:
+            cur=self._head
+            while cur!=None:
+                if cur.item==item:
+                    return True
+                cur=cur.next
+            return False
+    def insert(self,pos,item):
+        if pos<=0:
+            self.add(item)
+        elif pos>(self.length()-1):
+            aelf.append(item)
+        else:
+            node=Node(item)
+            cur=self._head
+            count=0
+            while count<(pos-1):
+                count+=1
+                cur=cur.next
+            node.prev=cur
+            node.next=cur.next
+            cur.next.prev=node
+            cur.next=node
     
-main()
+    def remove(self,item):
+        if self.is_empty():
+            return
+        else:
+            cur=self._head
+            if cur.item==item:
+                if cur.next==None:
+                    self._head=None
+                else:
+                    cur.next.prev=None
+                    self._head=None
+                return
+            while cur!=None:
+                if cur.item==item:
+                    cur.prev.next=cur.next
+                    cur.next.prev=cur.prev
+                cur=cur.next
+                
+        
+            
+            
     
