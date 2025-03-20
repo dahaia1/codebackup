@@ -1,0 +1,357 @@
+
+RG-S3760-1-2>ena 14
+
+Password:
+RG-S3760-1-2#con t
+Enter configuration commands, one per line.  End with CNTL/Z.
+RG-S3760-1-2(config)#
+RG-S3760-1-2(config)#hostname L3-SW
+L3-SW(config)#int
+L3-SW(config)#interface vlan 1
+L3-SW(config-if-VLAN 1)#ip add
+L3-SW(config-if-VLAN 1)#ip address 192.168.1.2 255.255.255.0
+L3-SW(config-if-VLAN 1)#no sh
+L3-SW(config-if-VLAN 1)#no shutdown
+L3-SW(config-if-VLAN 1)#ip address 192.168.1.1 255.255.255.0
+L3-SW(config-if-VLAN 1)#no shutdown
+L3-SW(config-if-VLAN 1)#exit
+L3-SW(config)#int
+L3-SW(config)#interface ran
+L3-SW(config)#interface range f
+L3-SW(config)#interface range fastEthernet 0/1-2
+L3-SW(config-if-range)#port-g
+L3-SW(config-if-range)#port-group 1
+L3-SW(config-if-range)#*Apr 15 08:35:55: %LINK-5-CHANGED: Interface FastEthernet
+ 0/1, changed state to administratively down.
+*Apr 15 08:35:56: %LINK-5-CHANGED: Interface FastEthernet 0/2, changed state to
+administratively down.
+
+L3-SW(config-if-range)#
+L3-SW(config-if-range)#
+L3-SW(config-if-range)#
+L3-SW(config-if-range)#exit
+L3-SW(config)#in
+L3-SW(config)#interface a
+L3-SW(config)#interface aggregateport 1
+L3-SW(config-if-AggregatePort 1)#sw
+L3-SW(config-if-AggregatePort 1)#switchport m
+L3-SW(config-if-AggregatePort 1)#switchport mode t
+L3-SW(config-if-AggregatePort 1)#switchport mode trunk
+L3-SW(config-if-AggregatePort 1)#exit
+L3-SW(config)#a
+L3-SW(config)#int
+L3-SW(config)#interface a
+L3-SW(config)#a
+L3-SW(config)#agg
+L3-SW(config)#aggregateport l
+L3-SW(config)#aggregateport load-balance ?
+  src-dst-ip   Source and destination IP address
+  src-dst-mac  Source and destination MAC address
+
+L3-SW(config)#aggregateport load-balance src-d
+L3-SW(config)#aggregateport load-balance src-dst-m
+L3-SW(config)#aggregateport load-balance src-dst-mac
+L3-SW(config)#exit
+L3-SW#*Apr 15 08:41:41: %SYS-5-CONFIG_I: Configured from console by console
+
+L3-SW#show a
+L3-SW#show agg
+L3-SW#show aggregatePort l
+L3-SW#show aggregatePort load-balance
+Load-balance   : Source MAC and Destination MAC
+L3-SW#show aggregatePort su
+L3-SW#show aggregatePort summary
+AggregatePort MaxPorts SwitchPort Mode   Ports
+------------- -------- ---------- ------ ----------------------------------
+Ag1           8        Enabled    TRUNK  Fa0/1   ,Fa0/2
+L3-SW#*Apr 15 08:43:18: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1,
+changed state to up.
+*Apr 15 08:43:19: %LINK-3-UPDOWN: Interface AggregatePort 1, changed state to up
+.
+*Apr 15 08:43:19: %LINEPROTO-5-UPDOWN: Line protocol on Interface AggregatePort
+1, changed state to up.
+
+L3-SW#sh
+L3-SW#show in
+L3-SW#show interfaces a
+L3-SW#show interfaces aggregateport 1
+Index(dec):29 (hex):1d
+AggregatePort 1 is UP  , line protocol is UP
+Hardware is Aggregate Link AggregatePort
+Interface address is: no ip address
+  MTU 1500 bytes, BW 1000000 Kbit
+  Encapsulation protocol is Bridge, loopback not set
+  Keepalive interval is 10 sec , set
+  Carrier delay is 2 sec
+  RXload is 1 ,Txload is 1
+  Queueing strategy: FIFO
+    Output queue 0/0, 0 drops;
+    Input queue 0/75, 0 drops
+  Switchport attributes:
+    interface's description:""
+    medium-type is copper
+    lastchange time:0 Day: 1 Hour:49 Minute:14 Second
+    Priority is 0
+    admin duplex mode is AUTO, oper duplex is Full
+    admin speed is AUTO, oper speed is 100M
+    flow control admin status is OFF,flow control oper status is OFF
+    broadcast Storm Control is OFF,multicast Storm Control is OFF,unicast Storm
+Control is OFF
+Aggregate Port Informations:
+        Aggregate Number: 1
+        Name: "AggregatePort 1"
+        Refs: 2
+        Members: (count=2)
+        FastEthernet 0/1 Link Status: Up
+        FastEthernet 0/2 Link Status: Up
+L3-SW#
+L3-SW#vlan 10
+
+Translating "vlan"...
+% Unrecognized host or address, or protocol not running.
+L3-SW#con t
+L3-SW#con terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+L3-SW(config)#vlan 10
+L3-SW(config-vlan)#exit
+L3-SW(config)#int
+L3-SW(config)#interface vlan 10
+L3-SW(config-if-VLAN 10)#*Apr 15 08:46:42: %LINEPROTO-5-UPDOWN: Line protocol on
+ Interface VLAN 10, changed state to up.
+ip
+% Incomplete command.
+
+L3-SW(config-if-VLAN 10)#ip a
+L3-SW(config-if-VLAN 10)#ip ad
+L3-SW(config-if-VLAN 10)#ip address 192.168.10
+                                              ^
+% Invalid input detected at '^' marker.
+
+L3-SW(config-if-VLAN 10)#ip address 192.168.10.1 255.255.255.0
+L3-SW(config-if-VLAN 10)#no
+L3-SW(config-if-VLAN 10)#no shu
+L3-SW(config-if-VLAN 10)#no shutdown
+L3-SW(config-if-VLAN 10)#exit
+L3-SW(config)#exit
+L3-SW#*Apr 15 08:50:02: %SYS-5-CONFIG_I: Configured from console by console
+
+L3-SW#ping 192.168.1.1 n
+L3-SW#ping 192.168.1.1 ntimes 1000
+Sending 1000, 100-byte ICMP Echoes to 192.168.1.1, timeout is 2 seconds:
+  < press Ctrl+C to break >
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (1000/1000), round-trip min/avg/max = 1/1/10 ms
+L3-SW#ping 192.168.1.1 ntimes 1000
+Sending 1000, 100-byte ICMP Echoes to 192.168.1.1, timeout is 2 seconds:
+  < press Ctrl+C to break >
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (1000/1000), round-trip min/avg/max = 1/1/10 ms
+L3-SW#ping 192.168.1.1 ntimes 2500
+Sending 2500, 100-byte ICMP Echoes to 192.168.1.1, timeout is 2 seconds:
+  < press Ctrl+C to break >
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (2500/2500), round-trip min/avg/max = 1/1/10 ms
+L3-SW#
+
+
+
+RG-S2328G-1-2>ena 14
+
+Password:
+RG-S2328G-1-2#con t
+Enter configuration commands, one per line.  End with CNTL/Z.
+RG-S2328G-1-2(config)#
+RG-S2328G-1-2(config)#hostname L2-SW
+L2-SW(config)#int
+L2-SW(config)#interface vlan 1
+L2-SW(config-if-VLAN 1)#ip add
+L2-SW(config-if-VLAN 1)#ip address 192.168.1.2 255.255.255.0
+L2-SW(config-if-VLAN 1)#*Apr 15 08:15:06: %LINK-3-UPDOWN: Interface VLAN 1, chan
+ged state to up.
+
+L2-SW(config-if-VLAN 1)#no sh
+L2-SW(config-if-VLAN 1)#no shutdown
+L2-SW(config-if-VLAN 1)#exit
+L2-SW(config)#interface r
+L2-SW(config)#interface range f
+L2-SW(config)#interface range fastEthernet 0/1-2
+L2-SW(config-if-range)#pot
+L2-SW(config-if-range)#po
+L2-SW(config-if-range)#port-group 1
+L2-SW(config-if-range)#exi*Apr 15 08:18:27: %LINK-5-CHANGED: Interface FastEther
+net 0/1, changed state to administratively down.
+*Apr 15 08:18:27: %LINK-5-CHANGED: Interface FastEthernet 0/2, changed state to
+administratively down.
+t
+L2-SW(config)#
+L2-SW(config)#exit
+L2-SW#*Apr 15 08:18:33: %SYS-5-CONFIG_I: Configured from console by console
+
+L2-SW#con t
+Enter configuration commands, one per line.  End with CNTL/Z.
+L2-SW(config)#
+L2-SW(config)#
+L2-SW(config)#int
+L2-SW(config)#interface a
+L2-SW(config)#interface aggregateport 1
+L2-SW(config-if-AggregatePort 1)#sw
+L2-SW(config-if-AggregatePort 1)#switchport mod
+L2-SW(config-if-AggregatePort 1)#switchport mode t
+L2-SW(config-if-AggregatePort 1)#switchport mode trunk
+L2-SW(config-if-AggregatePort 1)#exit
+L2-SW(config)#agg
+L2-SW(config)#aggregateport b
+L2-SW(config)#aggregateport l
+L2-SW(config)#aggregateport load-balance ?
+  dst-mac      Destination MAC address
+  src-dst-mac  Source and destination MAC address
+  src-mac      Source MAC address
+
+L2-SW(config)#interface aggregateport s
+L2-SW(config)#interface aggregateport sr
+L2-SW(config)#ag
+L2-SW(config)#aggregateport l
+L2-SW(config)#aggregateport load-balance ?
+  dst-mac      Destination MAC address
+  src-dst-mac  Source and destination MAC address
+  src-mac      Source MAC address
+
+L2-SW(config)#aggregateport load-balance src
+L2-SW(config)#aggregateport load-balance src-m
+L2-SW(config)#aggregateport load-balance src-mac
+L2-SW(config)#exit
+L2-SW#*Apr 15 08:22:47: %SYS-5-CONFIG_I: Configured from console by console
+
+L2-SW#sh
+L2-SW#*Apr 15 08:24:40: %LINEPROTO-5-UPDOWN: Line protocol on Interface VLAN 1,
+changed state to up.
+*Apr 15 08:24:42: %LINK-3-UPDOWN: Interface AggregatePort 1, changed state to up
+.
+*Apr 15 08:24:42: %LINEPROTO-5-UPDOWN: Line protocol on Interface AggregatePort
+1, changed state to up.
+
+L2-SW#
+L2-SW#sh
+L2-SW#show a
+L2-SW#show agg
+L2-SW#show aggregatePort l
+L2-SW#show aggregatePort load-balance
+Load-balance   : Source MAC
+L2-SW#show aggregatePort s
+L2-SW#show aggregatePort summary
+AggregatePort MaxPorts SwitchPort Mode   Ports
+------------- -------- ---------- ------ ----------------------------------
+Ag1           8        Enabled    TRUNK  Fa0/1   ,Fa0/2
+L2-SW#show
+L2-SW#show agg
+L2-SW#show int
+L2-SW#show interfaces agg
+L2-SW#show interfaces aggregateport 1
+Index(dec):27 (hex):1b
+AggregatePort 1 is UP  , line protocol is UP
+Hardware is Aggregate Link AggregatePort
+Interface address is: no ip address
+  MTU 1500 bytes, BW 1000000 Kbit
+  Encapsulation protocol is Bridge, loopback not set
+  Keepalive interval is 10 sec , set
+  Carrier delay is 2 sec
+  RXload is 1 ,Txload is 1
+  Queueing strategy: WFQ
+  Switchport attributes:
+    interface's description:""
+    medium-type is copper
+    lastchange time:0 Day: 1 Hour:49 Minute:12 Second
+    Priority is 0
+    admin duplex mode is AUTO, oper duplex is Full
+    admin speed is AUTO, oper speed is 100M
+    flow control admin status is OFF,flow control oper status is OFF
+    broadcast Storm Control is ON,multicast Storm Control is OFF,unicast Storm C
+ontrol is ON
+Aggregate Port Informations:
+        Aggregate Number: 1
+        Name: "AggregatePort 1"
+        Refs: 6
+        Members: (count=2)
+        FastEthernet 0/1 Link Status: Up
+        FastEthernet 0/2 Link Status: Up
+
+L2-SW#
+L2-SW#con t
+L2-SW#con terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+L2-SW(config)#
+L2-SW(config)#ip d
+L2-SW(config)#ip g
+L2-SW(config)#ip ga
+L2-SW(config)#ip de
+L2-SW(config)#ip def
+L2-SW(config)#ip default-gateway 192.168.1.1
+L2-SW(config)#exit
+L2-SW#*Apr 15 08:30:37: %SYS-5-CONFIG_I: Configured from console by console
+
+L2-SW#ping 192.168.1.1
+Sending 5, 100-byte ICMP Echoes to 192.168.1.1, timeout is 2 seconds:
+  < press Ctrl+C to break >
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/2/10 ms
+L2-SW#ping 192.168.10.1
+Sending 5, 100-byte ICMP Echoes to 192.168.10.1, timeout is 2 seconds:
+  < press Ctrl+C to break >
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/4/10 ms
+L2-SW#
