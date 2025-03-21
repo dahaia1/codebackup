@@ -1,0 +1,38 @@
+打开文件a.txt    
+1.向文件中  写入自己的班级学号 姓名
+2. 读取文件a 字符数量
+3.读取当前日期时间  追加到文件a中
+4.读取显示文件a中的所有内容
+5.关闭文件
+
+
+
+
+
+
+
+
+···································································
+f = open("writeme.txt", "w")
+txt = "写入文件哈哈"
+print(f.write(txt))
+
+
+
+
+······················
+from datetime import datetime
+
+f = open("appendme.txt", "a")
+now = str(datetime.now()) + "\n"
+print(f.write(now))
+
+
+··························
+f = open("appendme.txt", "r")
+
+for line in f.readlines():
+    print(line)
+·····················
+f.close()
+
