@@ -1,0 +1,177 @@
+The device is running!
+######################
+<Huawei>
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[0]:Interface GigabitE
+thernet0/0/1 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[1]:Interface GigabitE
+thernet0/0/2 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[2]:Interface GigabitE
+thernet0/0/3 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[3]:Interface GigabitE
+thernet0/0/4 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[4]:Interface GigabitE
+thernet0/0/5 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[5]:Interface GigabitE
+thernet0/0/6 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[6]:Interface GigabitE
+thernet0/0/7 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[7]:Interface GigabitE
+thernet0/0/8 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[8]:Interface GigabitE
+thernet0/0/9 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[9]:Interface GigabitE
+thernet0/0/10 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[10]:Interface Gigabit
+Ethernet0/0/11 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[11]:Interface Gigabit
+Ethernet0/0/12 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[12]:Interface Gigabit
+Ethernet0/0/13 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[13]:Interface Gigabit
+Ethernet0/0/14 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[14]:Interface Gigabit
+Ethernet0/0/15 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[15]:Interface Gigabit
+Ethernet0/0/16 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[16]:Interface Gigabit
+Ethernet0/0/17 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[17]:Interface Gigabit
+Ethernet0/0/18 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[18]:Interface Gigabit
+Ethernet0/0/19 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[19]:Interface Gigabit
+Ethernet0/0/20 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[20]:Interface Gigabit
+Ethernet0/0/21 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[21]:Interface Gigabit
+Ethernet0/0/22 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[22]:Interface Gigabit
+Ethernet0/0/23 has been available.
+Mar 24 2025 11:06:51-08:00 Huawei %%01IFNET/4/IF_ENABLE(l)[23]:Interface Gigabit
+Ethernet0/0/24 has been available.
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[24]:    GigabitEthernet0/0/1:
+ change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01IFNET/4/IF_STATE(l)[25]:Interface Vlanif1 
+has turned into DOWN state.
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[26]:    GigabitEthernet0/0/2:
+ change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[27]:    GigabitEthernet0/0/3:
+ change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[28]:    GigabitEthernet0/0/4:
+ change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[29]:    GigabitEthernet0/0/5:
+ change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[30]:    GigabitEthernet0/0/6:
+ change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[31]:    GigabitEthernet0/0/7:
+ change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[32]:    GigabitEthernet0/0/8:
+ change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[33]:    GigabitEthernet0/0/9:
+ change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[34]:    GigabitEthernet0/0/10
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[35]:    GigabitEthernet0/0/11
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[36]:    GigabitEthernet0/0/12
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[37]:    GigabitEthernet0/0/13
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[38]:    GigabitEthernet0/0/14
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[39]:    GigabitEthernet0/0/15
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[40]:    GigabitEthernet0/0/16
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[41]:    GigabitEthernet0/0/17
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[42]:    GigabitEthernet0/0/18
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[43]:    GigabitEthernet0/0/19
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[44]:    GigabitEthernet0/0/20
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[45]:    GigabitEthernet0/0/21
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[46]:    GigabitEthernet0/0/22
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[47]:    GigabitEthernet0/0/23
+: change status to down
+Mar 24 2025 11:06:52-08:00 Huawei %%01PHY/1/PHY(l)[48]:    GigabitEthernet0/0/24
+: change status to down
+Mar 24 2025 11:06:53-08:00 Huawei DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5
+.25.191.3.1 configurations have been changed. The current change number is 3, th
+e change loop count is 0, and the maximum number of records is 4095.
+<Huawei>
+
+
+
+The device is running!
+
+<Huawei>sys	
+<Huawei>system-view 
+Enter system view, return user view with Ctrl+Z.
+[Huawei]sysname SW2
+[SW2]int	
+[SW2]interface g	
+[SW2]interface GigabitEthernet 
+Mar 24 2025 11:08:45-08:00 SW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25
+.191.3.1 configurations have been changed. The current change number is 4, the c
+hange loop count is 0, and the maximum number of records is 4095.
+                               ^
+Error:Incomplete command found at '^' position.
+[SW2]interface GigabitEthernet 0/0/1
+[SW2-GigabitEthernet0/0/1]stp ed	
+[SW2-GigabitEthernet0/0/1]stp edged-port e	
+[SW2-GigabitEthernet0/0/1]stp edged-port enable 
+[SW2-GigabitEthernet0/0/1]exit
+                          ^
+Error: Unrecognized command found at '^' position.
+[SW2-GigabitEthernet0/0/1]quit
+[SW2]quit
+Mar 24 2025 11:09:15-08:00 SW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25
+.191.3.1 configurations have been changed. The current change number is 5, the c
+hange loop count is 0, and the maximum number of records is 4exit
+     ^
+Error: Unrecognized command found at '^' position.
+[SW2]interface GigabitEthernet 0/0/2
+[SW2-GigabitEthernet0/0/2]stp edged-port enable
+[SW2-GigabitEthernet0/0/2]qu
+Mar 24 2025 11:09:35-08:00 SW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25
+.191.3.1 configurations have been changed. The current change number is 6, the c
+hange loop count is 0, and the maximum number of records is 409
+[SW2-GigabitEthernet0/0/2]stp edged-port enable
+[SW2-GigabitEthernet0/0/2]quit
+[SW2]interface GigabitEthernet 0/0/3
+[SW2-GigabitEthernet0/0/3]stp edged-port enable
+[SW2-GigabitEthernet0/0/3]quit
+[SW2]
+Mar 24 2025 11:10:05-08:00 SW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25
+.191.3.1 configurations have been changed. The current change number is 7, the c
+hange loop count is 0, and the maximum number of records is 4095.
+[SW2]
+[SW2]
+[SW2]
+[SW2]dis	
+[SW2]display st	
+[SW2]display stp b	
+[SW2]display stp brief 
+ MSTID  Port                        Role  STP State     Protection
+   0    GigabitEthernet0/0/1        DESI  FORWARDING      NONE
+   0    GigabitEthernet0/0/2        DESI  FORWARDING      NONE
+   0    GigabitEthernet0/0/3        DESI  FORWARDING      NONE
+   0    GigabitEthernet0/0/24       ROOT  FORWARDING      NONE
+[SW2]stp b	
+[SW2]stp bpdu-p	
+[SW2]stp bpdu-protection 
+[SW2]display stp brief
+ MSTID  Port                        Role  STP State     Protection
+   0    GigabitEthernet0/0/1        DESI  FORWARDING      BPDU
+   0    GigabitEthernet0/0/2        DESI  FORWARDING      BPDU
+   0    GigabitEthernet0/0/3        DESI  FORWARDING      BPDU
+   0    GigabitEthernet0/0/24       ROOT  FORWARDING      NONE
+[SW2]
+Mar 24 2025 11:11:35-08:00 SW2 DS/4/DATASYNC_CFGCHANGE:OID 1.3.6.1.4.1.2011.5.25
+.191.3.1 configurations have been changed. The current change number is 8, the c
+hange loop count is 0, and the maximum number of records is 4095.
+[SW2]
