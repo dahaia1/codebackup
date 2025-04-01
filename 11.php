@@ -4,13 +4,13 @@ td {
 }
 </style>
 <?php
-header('Content-Type: text/html; charset=utf-8');
+header("content-type: text/html; charset=utf-8");
 echo "<table>";
 for ($i = 1; $i <= 9; $i++) {
     echo "<tr>";
-    for ($j = 1; $j <= $i; $j++) {  // 关键修改：列数随行号变化
+    for ($j = $i; $j <= 9; $j++) {  // 关键的下三角逻辑
         echo "<td>" 
-             . $j . "×" . $i . "=" 
+             . $i . "×" . $j . "=" 
              . ($i * $j) 
              . "</td>";
     }
